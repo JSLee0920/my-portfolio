@@ -1,65 +1,117 @@
-import Image from "next/image";
+import type { NextPage } from "next";
+import Head from "next/head";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi"; // npm install react-icons
 
-export default function Home() {
+const HomePage: NextPage = () => {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+    <>
+      <Head>
+        <title>JSLee :: Portfolio</title>
+      </Head>
+
+      {/* Main Container with Grid Background */}
+      <main className="relative flex flex-col w-full h-full bg-grid-dots">
+        {/* Navigation Bar */}
+        <header className="fixed top-0 left-0 w-full z-50 px-6 sm:px-12 py-6 bg-black-bg/90 border-b border-terminal-green/10 backdrop-blur-sm">
+          <nav className="flex items-center justify-between">
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="#"
+              className="text-xl font-bold text-terminal-green hover:opacity-80 transition-opacity"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+              &gt;_ jslee.portfolio
+            </a>
+            <div className="flex items-center gap-6 text-sm text-muted-text">
+              {["About", "Experience", "Projects", "Skills"].map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase()}`}
+                  className="hover:text-terminal-green transition-colors"
+                >
+                  {item}
+                </a>
+              ))}
+              <a
+                href="#contact"
+                className="px-5 py-2.5 bg-[#0b3b24] text-terminal-green border border-terminal-green/20 font-bold hover:bg-terminal-green hover:text-black-bg transition-colors"
+              >
+                Contact
+              </a>
+            </div>
+          </nav>
+        </header>
+
+        {/* Hero Section */}
+        <section className="flex flex-col grow justify-center items-start pt-32 px-6 sm:px-12 md:px-24">
+          {/* Availability Badge */}
+          <div className="inline-flex items-center gap-3 px-4 py-2 border border-terminal-green/30 bg-badge-green text-terminal-green/80 text-sm mb-10 selection:bg-terminal-green selection:text-black-bg">
+            <span className="relative flex h-2.5 w-2.5">
+              {/* Removed rounded-full to make the pinging dot a square */}
+              <span className="animate-ping absolute inline-flex h-full w-full bg-terminal-green opacity-75"></span>
+              <span className="relative inline-flex h-2.5 w-2.5 bg-terminal-green"></span>
+            </span>
+            Available for opportunities
+          </div>
+
+          {/* Terminal Path */}
+          <p className="text-muted-text text-sm mb-4">
+            &gt;_ ~/portfolio •{" "}
+            <span className="text-terminal-green">main</span>
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+          {/* Large Name */}
+          <h1 className="text-7xl sm:text-8xl md:text-7xl font-extrabold text-terminal-green mb-6 tracking-tight">
+            Lee Jia Sheng
+          </h1>
+
+          {/* Tagline */}
+          <p className="text-xl sm:text-2xl text-terminal-green mb-8">
+            &gt; CS Student | AI Enthusiast | Software Developer |
+          </p>
+
+          {/* Paragraph Description */}
+          <p className="max-w-3xl leading-relaxed text-muted-text mb-12">
+            CS Undergraduate @ Multimedia University (MMU), majoring in
+            Artificial Intelligence. Full-stack engineer and AI specialist
+            focused on building scalable systems, agentic workflows, and
+            high-performance applications from the backend to the UI. Passionate
+            about creating innovative solutions that push the boundaries of
+            technology.
+          </p>
+
+          {/* Buttons */}
+          <div className="flex gap-4 mb-8">
+            <a
+              href="#contact"
+              className="px-8 py-3.5 bg-[#0b3b24] text-terminal-green border-2 border-terminal-green/20 font-extrabold hover:bg-terminal-green hover:text-black-bg transition-colors"
+            >
+              Get in touch
+            </a>
+            <a
+              href="#projects"
+              className="px-8 py-3.5 border-2 border-terminal-green text-terminal-green font-bold hover:bg-terminal-green/20 transition-colors"
+            >
+              View work
+            </a>
+          </div>
+
+          {/* Social Icons (Footer-style within hero) */}
+          <div className="flex gap-6 mt-auto pt-1 pb-2 text-xl justify-end align-bottom text-muted-text selection:text-terminal-green">
+            {[FiGithub, FiLinkedin, FiMail].map((Icon, index) => (
+              <a
+                key={index}
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-terminal-green transition-colors hover:scale-110"
+              >
+                <Icon />
+              </a>
+            ))}
+          </div>
+        </section>
       </main>
-    </div>
+    </>
   );
-}
+};
+
+export default HomePage;

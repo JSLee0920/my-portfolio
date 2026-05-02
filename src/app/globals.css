@@ -1,26 +1,29 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@theme {
+  /* Map your Next.js font variables */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Programmer Color Palette */
+
+  /* Changed to a softer black (Material Design Dark standard) */
+  --color-black-bg: #161616;
+
+  --color-terminal-green: #00df9a;
+
+  /* Slightly lighter gray so it remains legible on the softer black */
+  --color-muted-text: #a1a1aa;
+
+  --color-badge-green: #1a3b2b;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Base styles forcing the terminal feel on a solid background */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-black-bg text-muted-text font-mono antialiased;
+}
+
+/* Custom selection color to match the theme */
+::selection {
+  @apply bg-terminal-green/20 text-terminal-green;
 }
