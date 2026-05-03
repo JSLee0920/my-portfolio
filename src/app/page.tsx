@@ -61,7 +61,7 @@ const backgroundItems: BackgroundItem[] = [
     period: "July 2023 - Present",
     points: [
       "Cumulative GPA: 3.92/4.0 | Dean’s List",
-      "Relevant Coursework: Data Structures, Program Development, Microprocessors, Abstract Algebra I: Groups and Rings, Linear Algebra, Discrete Mathematics, Multivariable & Single Variable Calculus, Principles and Practice of Comp Sc",
+      "Relevant Coursework: Computer Programming, Operating Systems, Database Systems, Data Structures and Algorithms, Object-Oriented Programming, System Analysis and Design, Machine Learning, Software Engineering Fundamentals, Web Techniques and Application, Computer Vision, Computer Networks",
     ],
   },
   {
@@ -80,7 +80,14 @@ const backgroundItems: BackgroundItem[] = [
 const skillGroups: SkillGroup[] = [
   {
     title: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    skills: [
+      "React",
+      "Next.js",
+      "Angular",
+      "Svelte",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
   },
   {
     title: "Backend",
