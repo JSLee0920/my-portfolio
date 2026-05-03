@@ -19,6 +19,15 @@ body {
   @apply bg-black-bg text-muted-text font-mono antialiased;
 }
 
+.bg-grid-dots {
+  background-color: var(--color-black-bg);
+  background-image: radial-gradient(
+    rgba(255, 204, 0, 0.08) 1px,
+    transparent 1px
+  );
+  background-size: 36px 36px;
+}
+
 /* Custom selection color to match the theme */
 ::selection {
   @apply bg-terminal-yellow/20 text-terminal-yellow;
