@@ -2,6 +2,12 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi"; // npm install react-icons
 
+const socialLinks = [
+  { href: "https://github.com/JSLee0920", label: "GitHub", Icon: FiGithub },
+  { href: "https://www.linkedin.com/", label: "LinkedIn", Icon: FiLinkedin },
+  { href: "mailto:", label: "Email", Icon: FiMail },
+];
+
 const HomePage: NextPage = () => {
   return (
     <>
@@ -12,27 +18,27 @@ const HomePage: NextPage = () => {
       {/* Main Container with Grid Background */}
       <main className="relative flex flex-col w-full h-full bg-grid-dots">
         {/* Navigation Bar */}
-        <header className="fixed top-0 left-0 w-full z-50 px-6 sm:px-12 py-6 bg-black-bg/90 border-b border-terminal-green/10 backdrop-blur-sm">
+        <header className="fixed top-0 left-0 w-full z-50 px-6 sm:px-12 py-6 bg-black-bg/90 border-b border-terminal-yellow/10 backdrop-blur-sm">
           <nav className="flex items-center justify-between">
             <a
-              href="#"
-              className="text-xl font-bold text-terminal-green hover:opacity-80 transition-opacity"
+              href="/"
+              className="text-xl font-bold text-terminal-yellow hover:opacity-80 transition-opacity"
             >
-              &gt;_ jslee.portfolio
+              JSLee0920.portfolio
             </a>
             <div className="flex items-center gap-6 text-sm text-muted-text">
               {["About", "Experience", "Projects", "Skills"].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="hover:text-terminal-green transition-colors"
+                  className="hover:text-terminal-yellow transition-colors"
                 >
                   {item}
                 </a>
               ))}
               <a
                 href="#contact"
-                className="px-5 py-2.5 bg-[#0b3b24] text-terminal-green border border-terminal-green/20 font-bold hover:bg-terminal-green hover:text-black-bg transition-colors"
+                className="px-5 py-2.5 bg-terminal-yellow text-black-bg border border-terminal-yellow font-bold hover:bg-black-bg hover:text-terminal-yellow transition-colors"
               >
                 Contact
               </a>
@@ -43,7 +49,7 @@ const HomePage: NextPage = () => {
         {/* Hero Section */}
         <section className="flex flex-col grow justify-center items-start pt-32 px-6 sm:px-12 md:px-24">
           {/* Availability Badge */}
-          <div className="inline-flex items-center gap-3 px-4 py-2 border border-terminal-green/30 bg-badge-green text-terminal-green/80 text-sm mb-10 selection:bg-terminal-green selection:text-black-bg">
+          <div className="inline-flex items-center gap-3 px-4 py-2 border border-terminal-green/30 bg-badge-green text-terminal-green text-sm mb-10 selection:bg-terminal-green selection:text-black-bg">
             <span className="relative flex h-2.5 w-2.5">
               {/* Removed rounded-full to make the pinging dot a square */}
               <span className="animate-ping absolute inline-flex h-full w-full bg-terminal-green opacity-75"></span>
@@ -55,17 +61,17 @@ const HomePage: NextPage = () => {
           {/* Terminal Path */}
           <p className="text-muted-text text-sm mb-4">
             &gt;_ ~/portfolio •{" "}
-            <span className="text-terminal-green">main</span>
+            <span className="text-terminal-yellow">main</span>
           </p>
 
           {/* Large Name */}
-          <h1 className="text-7xl sm:text-8xl md:text-7xl font-extrabold text-terminal-green mb-6 tracking-tight">
+          <h1 className="text-7xl sm:text-8xl md:text-7xl font-extrabold text-terminal-yellow mb-6 tracking-tight">
             Lee Jia Sheng
           </h1>
 
           {/* Tagline */}
-          <p className="text-xl sm:text-2xl text-terminal-green mb-8">
-            &gt; CS Student | AI Enthusiast | Software Developer |
+          <p className="text-xl sm:text-2xl text-terminal-yellow mb-8">
+            &gt; CS Student | AI Enthusiast | Software Developer
           </p>
 
           {/* Paragraph Description */}
@@ -82,27 +88,28 @@ const HomePage: NextPage = () => {
           <div className="flex gap-4 mb-8">
             <a
               href="#contact"
-              className="px-8 py-3.5 bg-[#0b3b24] text-terminal-green border-2 border-terminal-green/20 font-extrabold hover:bg-terminal-green hover:text-black-bg transition-colors"
+              className="px-8 py-3.5 bg-terminal-yellow text-black-bg border-2 border-terminal-yellow font-extrabold hover:bg-black-bg hover:text-terminal-yellow transition-colors"
             >
               Get in touch
             </a>
             <a
               href="#projects"
-              className="px-8 py-3.5 border-2 border-terminal-green text-terminal-green font-bold hover:bg-terminal-green/20 transition-colors"
+              className="px-8 py-3.5 border-2 border-terminal-yellow text-terminal-yellow font-bold hover:bg-terminal-yellow hover:text-black-bg transition-colors"
             >
               View work
             </a>
           </div>
 
           {/* Social Icons (Footer-style within hero) */}
-          <div className="flex gap-6 mt-auto pt-1 pb-2 text-xl justify-end align-bottom text-muted-text selection:text-terminal-green">
-            {[FiGithub, FiLinkedin, FiMail].map((Icon, index) => (
+          <div className="flex gap-6 mt-auto pt-1 pb-2 text-xl justify-end align-bottom text-muted-text selection:text-terminal-yellow">
+            {socialLinks.map(({ href, label, Icon }) => (
               <a
-                key={index}
-                href="#"
+                key={label}
+                href={href}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-terminal-green transition-colors hover:scale-110"
+                aria-label={label}
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-zinc-800/70 border border-zinc-700/70 shadow-md hover:bg-zinc-800 hover:text-terminal-yellow hover:border-terminal-yellow/40 transition-all hover:scale-110"
               >
                 <Icon />
               </a>
