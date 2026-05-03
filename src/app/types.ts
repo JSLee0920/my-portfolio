@@ -31,6 +31,7 @@ export type BackgroundItem = {
 export type SkillGroup = {
   title: string;
   skills: string[];
+  color?: string;
 };
 
 export type SectionLabelProps = {
@@ -40,6 +41,7 @@ export type SectionLabelProps = {
 
 export type TechListProps = {
   items: string[];
+  colorClass?: string;
 };
 
 export type PortfolioCardProps = {
