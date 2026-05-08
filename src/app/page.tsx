@@ -70,9 +70,9 @@ const backgroundItems: BackgroundItem[] = [
     org: "Softinn Solutions",
     period: "July 2025 - October 2025",
     points: [
-      "Built company's new official website and ensure a responsive, high-performance user experience across all device types.",
+      "Developed the company's new official website using HTML, CSS, JavaScript, and Bootstrap within an ASP.Net Core framework to ensure a responsive, high performance user experience across all device types.",
       "Worked on the frontend side of product development, collaborating closely with backend engineers and UI/UX designers to translate wireframes into functional, interactive features.",
-      "Integrated RESTful APIs and managed complex state transitions to ensure seamless data flow and real-time interface updates.",
+      "Developed user interfaces and integrated RESTful APIs for the company's products using Angular, managing CRUD operations to ensure seamless data flow and real-time interface updates.",
     ],
   },
 ];
