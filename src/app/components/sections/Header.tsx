@@ -8,7 +8,7 @@ export const Header = () => {
         >
           JSLee0920.portfolio
         </a>
-        <div className="flex shrink-0 items-center gap-3 text-sm text-zinc-300 sm:gap-5 lg:gap-6">
+        <div className="hidden shrink-0 items-center gap-3 text-sm text-zinc-300 sm:flex sm:gap-5 lg:gap-6">
           {["About", "Education", "Experience", "Projects", "Skills"].map(
             (item) => (
               <a

@@ -14,9 +14,9 @@ const socialLinks: SocialLink[] = [
 
 export const Hero = () => {
   return (
-    <section className="flex min-h-screen px-4 pt-20 sm:px-12 md:px-24">
-      <div className="mx-auto grid w-full max-w-7xl items-center gap-12 py-16 sm:py-24 lg:grid-cols-[minmax(0,1fr)_360px]">
-        <div className="flex flex-col items-start">
+    <section className="min-h-screen px-4 pt-20 sm:px-12 md:px-24">
+      <div className="mx-auto grid w-[90vw] max-w-7xl items-center gap-12 py-16 sm:w-full sm:py-24 lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="flex min-w-0 flex-col items-start">
           <div className="mb-8 inline-flex items-center gap-3 border border-terminal-green/30 bg-badge-green px-3 py-2 text-xs text-terminal-green selection:bg-terminal-green selection:text-black-bg sm:mb-10 sm:px-4 sm:text-sm">
             <span className="relative flex h-2.5 w-2.5">
               <span className="absolute inline-flex h-full w-full animate-ping bg-terminal-green opacity-75" />
@@ -29,22 +29,22 @@ export const Hero = () => {
             &gt;_ ~/portfolio <span className="text-terminal-yellow">main</span>
           </p>
 
-          <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-terminal-yellow sm:text-6xl lg:text-5xl">
+          <h1 className="mb-6 max-w-full break-words text-3xl font-extrabold tracking-tight text-terminal-yellow sm:text-6xl lg:text-5xl">
             Hi, I'm Jia Sheng!
           </h1>
 
-          <p className="mb-8 text-md text-terminal-yellow sm:text-lg">
+          <p className="mb-8 text-sm text-terminal-yellow sm:text-lg">
             &gt; CS Student | Software Developer
           </p>
 
-          <p className="mb-10 max-w-2xl leading-relaxed text-zinc-300 sm:mb-12">
+          <p className="mb-10 max-w-xs break-words text-sm leading-relaxed text-zinc-300 sm:mb-12 sm:max-w-2xl sm:text-base">
             CS Undergraduate @ Multimedia University (MMU), majoring in
             Artificial Intelligence. Software engineer focused on building
             scalable systems, agentic workflows, and high-performance
             applications from backend to UI.
           </p>
 
-          <div className="mb-2 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:gap-4">
+          <div className="mb-2 flex w-full max-w-xs flex-col gap-3 sm:w-auto sm:max-w-none sm:flex-row sm:gap-4">
             <a
               href="#contact"
               className="border-2 border-terminal-yellow bg-terminal-yellow px-6 py-3 text-center font-extrabold text-black-bg transition-colors hover:bg-black-bg hover:text-terminal-yellow sm:px-8 sm:py-3.5"
