@@ -12,7 +12,18 @@ const brandColors: Record<string, string> = {
   TensorFlow: "border-[#ff6f00]/40 text-[#ff6f00] bg-[#ff6f00]/10",
   Git: "border-[#f05032]/40 text-[#f05032] bg-[#f05032]/10",
   Docker: "border-[#2496ed]/40 text-[#2496ed] bg-[#2496ed]/10",
+  Golang: "border-[#2496ed]/40 text-[#2496ed] bg-[#2496ed]/10",
   Linux: "border-[#fcc624]/40 text-[#fcc624] bg-[#fcc624]/10",
+  Qdrant: "border-[#fd4251]/40 text-[#fd4251] bg-[#fd4251]/10",
+  Angular: "border-[#fd4251]/40 text-[#fd4251] bg-[#fd4251]/10",
+  Neo4j: "border-[#018bff]/40 text-[#018bff] bg-[#018bff]/10",
+  "Spring Boot": "border-[#6db33f]/40 text-[#6db33f] bg-[#6db33f]/10",
+  Bun: "border-[#fbf0df]/40 text-[#fbf0df] bg-[#fbf0df]/10",
+  "Tailwind CSS": "border-[#38bdf8]/40 text-[#38bdf8] bg-[#38bdf8]/10",
+  "Google ADK": "border-[#4285f4]/40 text-[#4285f4] bg-[#4285f4]/10",
+  "scikit-learn": "border-[#f7931e]/40 text-[#f7931e] bg-[#f7931e]/10",
+  pandas: "border-[#018bff]/40 text-[#018bff] bg-[#018bff]/10",
+  LangGraph: "border-[#ff6a00]/40 text-[#ff6a00] bg-[#ff6a00]/10",
 };
 
 export const TechList = ({ items }: TechListProps) => (

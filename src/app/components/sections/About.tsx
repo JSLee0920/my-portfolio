@@ -1,6 +1,6 @@
+import { FiUser } from "react-icons/fi";
 import { PortfolioCard } from "../PortfolioCard";
 import { SectionLabel } from "../SectionLabel";
-import { FiUser } from "react-icons/fi";
 
 export const About = () => {
   return (
@@ -11,7 +11,7 @@ export const About = () => {
           <h2 className="mb-6 text-4xl font-extrabold text-zinc-100">
             About <span className="text-terminal-yellow">Me</span>
           </h2>
-          <p className="mb-8 max-w-3xl leading-relaxed text-zinc-300">
+          <p className="mb-0 max-w-3xl leading-relaxed text-zinc-300">
             Hi, I'm Lee Jia Sheng. I'm a CS student majoring in AI who loves the
             challenge of building software from the ground up. I’m currently
             diving into full-stack and AI development, while also keeping an eye
