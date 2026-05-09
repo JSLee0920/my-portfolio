@@ -13,40 +13,88 @@ import { Footer } from "./components/sections/Footer";
 
 const projects: Project[] = [
   {
-    title: "AI Chatbot",
+    title: "HealthNavigator: AI-Powered Personal Health Assistant",
     description:
-      "Conversational AI assistant built with transformer models, retrieval workflows, and API-ready deployment.",
-    stack: ["Python", "PyTorch", "Transformers", "FastAPI"],
+      "HealthNavigator is an advanced, production-grade healthcare AI assistant powered by a Hybrid Retrieval-Augmented Generation (RAG) architecture. It combines the semantic search capabilities of a Vector Database with the deep relational logic of a Graph Database to provide highly accurate, context-aware medical insights.",
+    stack: [
+      "Python",
+      "Next.js",
+      "PostgreSQL",
+      "FastAPI",
+      "Qdrant",
+      "Neo4j",
+      "Docker",
+    ],
     actions: [
       {
         label: "GitHub",
-        href: "https://github.com/JSLee0920",
+        href: "https://github.com/JSLee0920/healthnavigator-fyp",
         variant: "primary",
       },
     ],
   },
   {
-    title: "Computer Vision App",
+    title: "Full Stack Event Ticketing System Platform",
     description:
-      "Real-time object detection and image classification system with CNN models and a responsive web UI.",
-    stack: ["TensorFlow", "OpenCV", "React", "Flask"],
+      "A full-stack event ticketing platform designed to manage complex event workflows and process high-concurrency ticket sales seamlessly. Powered by a robust Java Spring Boot backend and a  TanStack Start frontend (via Bun), the system acts as a secure engine for checkout fulfillment. To guarantee inventory accuracy during massive traffic spikes, it utilizes PostgreSQL and optimistic locking to completely eliminate the risk of overselling.",
+    stack: ["React", "Spring Boot", "Bun", "Tailwind CSS", "TypeScript"],
     actions: [
       {
         label: "GitHub",
-        href: "https://github.com/JSLee0920",
+        href: "https://github.com/JSLee0920/event-ticketing-system",
         variant: "primary",
       },
     ],
   },
   {
-    title: "ML Pipeline",
+    title: "JobHunter",
     description:
-      "End-to-end machine learning pipeline for preprocessing, training, evaluation, and deployment.",
-    stack: ["scikit-learn", "Docker", "MLflow", "AWS"],
+      "An AI-powered job search application that matches your resume with job listings and generates personalized cover letters using Google's Agent Development Kit (ADK) and Gemini.",
+    stack: ["Python", "FastAPI", "React", "Google ADK"],
     actions: [
       {
         label: "GitHub",
-        href: "https://github.com/JSLee0920",
+        href: "https://github.com/JSLee0920/jobhunter",
+        variant: "primary",
+      },
+    ],
+  },
+  {
+    title: "Diabetes Prediction using Machine Learning",
+    description:
+      "This project focuses on building a predictive model to identify the likelihood of diabetes in patients based on clinical and demographic features. By utilizing machine learning and deep learning techniques, the project evaluates and compares different algorithms to find the most effective approach for early diagnosis.",
+    stack: ["scikit-learn", "TensorFlow", "pandas"],
+    actions: [
+      {
+        label: "GitHub",
+        href: "https://github.com/JSLee0920/diabetes-prediction",
+        variant: "primary",
+      },
+    ],
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "A personal portfolio built with Next.js and Tailwind CSS to present my projects, technical background, and contact details through a fast, responsive, terminal-inspired interface.",
+    stack: ["Next.js", "Tailwind CSS"],
+    actions: [
+      {
+        label: "GitHub",
+        href: "https://github.com/JSLee0920/my-portfolio",
+        variant: "primary",
+      },
+    ],
+  },
+
+  {
+    title: "AetherHR",
+    description:
+      "AetherHR is an intelligent, agentic HR operations platform designed to transform HR from a bottleneck into a strategic asset by automating documents / contracts generation and providing HR conversational assistant for handling FAQS from employees. Developed for the Deriv AI Hackathon.",
+    stack: ["Next.js", "FastAPI", "LangChain", "LangGraph"],
+    actions: [
+      {
+        label: "GitHub",
+        href: "https://github.com/JSLee0920/deriv-ai-hackathon-hr",
         variant: "primary",
       },
     ],
