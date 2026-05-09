@@ -1,6 +1,6 @@
+import { FiSend } from "react-icons/fi";
 import { PortfolioCard } from "../PortfolioCard";
 import { SectionLabel } from "../SectionLabel";
-import { FiSend } from "react-icons/fi";
 
 export const Contact = () => {
   return (
@@ -23,12 +23,12 @@ export const Contact = () => {
               Email me
             </a>
             <a
-              href="https://github.com/JSLee0920"
+              href="/resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="border-2 border-terminal-yellow px-8 py-3.5 font-bold text-terminal-yellow transition-colors hover:bg-terminal-yellow hover:text-black-bg"
             >
-              GitHub
+              Resume
             </a>
           </div>
         </PortfolioCard>
