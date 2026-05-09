@@ -14,10 +14,10 @@ const socialLinks: SocialLink[] = [
 
 export const Hero = () => {
   return (
-    <section className="flex min-h-screen px-6 pt-12 sm:px-12 md:px-24">
-      <div className="mx-auto grid w-full max-w-7xl items-center gap-12 py-24 lg:grid-cols-[minmax(0,1fr)_360px]">
+    <section className="flex min-h-screen px-4 pt-20 sm:px-12 md:px-24">
+      <div className="mx-auto grid w-full max-w-7xl items-center gap-12 py-16 sm:py-24 lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="flex flex-col items-start">
-          <div className="mb-10 inline-flex items-center gap-3 border border-terminal-green/30 bg-badge-green px-4 py-2 text-sm text-terminal-green selection:bg-terminal-green selection:text-black-bg">
+          <div className="mb-8 inline-flex items-center gap-3 border border-terminal-green/30 bg-badge-green px-3 py-2 text-xs text-terminal-green selection:bg-terminal-green selection:text-black-bg sm:mb-10 sm:px-4 sm:text-sm">
             <span className="relative flex h-2.5 w-2.5">
               <span className="absolute inline-flex h-full w-full animate-ping bg-terminal-green opacity-75" />
               <span className="relative inline-flex h-2.5 w-2.5 bg-terminal-green" />
@@ -29,7 +29,7 @@ export const Hero = () => {
             &gt;_ ~/portfolio <span className="text-terminal-yellow">main</span>
           </p>
 
-          <h1 className="mb-6 text-5xl font-extrabold tracking-tight text-terminal-yellow sm:text-8xl md:text-5xl">
+          <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-terminal-yellow sm:text-6xl lg:text-5xl">
             Hi, I'm Jia Sheng!
           </h1>
 
@@ -37,23 +37,23 @@ export const Hero = () => {
             &gt; CS Student | Software Developer
           </p>
 
-          <p className="mb-12 max-w-2xl leading-relaxed text-zinc-300">
+          <p className="mb-10 max-w-2xl leading-relaxed text-zinc-300 sm:mb-12">
             CS Undergraduate @ Multimedia University (MMU), majoring in
             Artificial Intelligence. Software engineer focused on building
             scalable systems, agentic workflows, and high-performance
             applications from backend to UI.
           </p>
 
-          <div className="mb-2 flex gap-4">
+          <div className="mb-2 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:gap-4">
             <a
               href="#contact"
-              className="border-2 border-terminal-yellow bg-terminal-yellow px-8 py-3.5 font-extrabold text-black-bg transition-colors hover:bg-black-bg hover:text-terminal-yellow"
+              className="border-2 border-terminal-yellow bg-terminal-yellow px-6 py-3 text-center font-extrabold text-black-bg transition-colors hover:bg-black-bg hover:text-terminal-yellow sm:px-8 sm:py-3.5"
             >
               Get in touch
             </a>
             <a
               href="#projects"
-              className="border-2 border-terminal-yellow px-8 py-3.5 font-bold text-terminal-yellow transition-colors hover:bg-terminal-yellow hover:text-black-bg"
+              className="border-2 border-terminal-yellow px-6 py-3 text-center font-bold text-terminal-yellow transition-colors hover:bg-terminal-yellow hover:text-black-bg sm:px-8 sm:py-3.5"
             >
               View work
             </a>
@@ -75,7 +75,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="mx-auto w-full max-w-72 overflow-hidden rounded-full border border-terminal-yellow/40 bg-zinc-950/40 shadow-[0_0_60px_rgba(250,204,21,0.12)] lg:mr-0 lg:max-w-none">
+        <div className="mx-auto hidden w-full max-w-72 overflow-hidden rounded-full border border-terminal-yellow/40 bg-zinc-950/40 shadow-[0_0_60px_rgba(250,204,21,0.12)] lg:mr-0 lg:block lg:max-w-none">
           <Image
             src="/profile-pic.jpg"
             alt="Lee Jia Sheng"
