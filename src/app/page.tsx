@@ -128,22 +128,15 @@ const backgroundItems: BackgroundItem[] = [
 const skillGroups: SkillGroup[] = [
   {
     title: "Frontend",
-    skills: [
-      "React",
-      "Next.js",
-      "Angular",
-      "Svelte",
-      "TypeScript",
-      "Tailwind CSS",
-    ],
+    skills: ["React", "Next.js", "Angular", "TypeScript", "Tailwind CSS"],
   },
   {
     title: "Backend",
-    skills: ["Node.js", "FastAPI", "REST APIs", "PostgreSQL"],
+    skills: ["Node.js", "FastAPI", "Spring Boot", "Golang", "PostgreSQL"],
   },
   {
     title: "AI / ML",
-    skills: ["Python", "PyTorch", "TensorFlow", "OpenCV"],
+    skills: ["Python", "PyTorch", "TensorFlow", "LangChain", "LangGraph"],
   },
   {
     title: "Tools",
