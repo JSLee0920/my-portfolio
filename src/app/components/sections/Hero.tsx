@@ -17,14 +17,6 @@ export const Hero = () => {
     <section className="min-h-screen px-4 pt-20 sm:px-12 md:px-24">
       <div className="mx-auto grid w-[90vw] max-w-7xl items-center gap-12 py-16 sm:w-full sm:py-24 lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="flex min-w-0 flex-col items-start">
-          <div className="mb-8 inline-flex items-center gap-3 border border-terminal-green/30 bg-badge-green px-3 py-2 text-xs text-terminal-green selection:bg-terminal-green selection:text-black-bg sm:mb-10 sm:px-4 sm:text-sm">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="absolute inline-flex h-full w-full animate-ping bg-terminal-green opacity-75" />
-              <span className="relative inline-flex h-2.5 w-2.5 bg-terminal-green" />
-            </span>
-            Available for opportunities
-          </div>
-
           <p className="mb-4 text-sm text-zinc-300">
             &gt;_ ~/portfolio <span className="text-terminal-yellow">main</span>
           </p>
